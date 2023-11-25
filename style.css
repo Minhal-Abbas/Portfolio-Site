@@ -1,0 +1,22 @@
+
+
+
+/* .gradient-bg {
+    background: linear-gradient(to right, #3d3d3d, #9ca3af);
+    color: #1f2937;
+}
+
+.gradient-dark {
+    background: linear-gradient(to right, #1751a1, #ffffff);
+    color: red;
+} */
+
+
+
+.asd{
+    font-size: 70px
+}
+
+.display-none{
+    @apply hidden;
+}

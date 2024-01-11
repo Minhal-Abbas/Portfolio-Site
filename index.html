@@ -71,7 +71,7 @@
         <nav class="border-gray-200">
              <!-- <nav class="bg-white border-gray-200 dark:bg-gray-900"> -->
                 <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 pt-5">
-                    <a href="https://flowbite.com" class="flex items-center  rtl:space-x-reverse">
+                    <a href="#" class="flex items-center  rtl:space-x-reverse">
 
                             <img src="./images/log light.png" alt="Light Mode Image" class="w-full h-14 dark:hidden">                  
                             <img src="./images/log.png" alt="Dark Mode Image" class="w-full h-14 hidden dark:block">
@@ -167,61 +167,86 @@
 
                 <!-- CONTACT BUTTON-->
                 <div class="hidden rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                   <!-- <p class="text-sm text-gray-900 dark:text-gray-400"> -->
                         <div class=" pb-5">
                             <img src="./images/contact.jpg" alt="Your Image" class="w-full h-auto min-h-[180px]">
                         </div>
 
-
-                        <div class="basis-[50%] pb-5">
-                            <form>
-                                <div class="grid w-[40%] gap-6 mb-6 align-center ">
-                                    <div>
-                                        <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Name" required>
+                        <div class="flex max-w-[1440px] md:py-[80] py-3 flex mx-auto md:flex-row flex-col justify-center">
+                            <div class="basis-[60%] flex justify-center">
+                                <form class="w-full max-w-[70%] rounded-lg ">
+                                    <h2 class="text-3xl font-bold mb-6">Send Us an Email</h2>
+                                    <div class="grid gap-4">
+                                        <div>
+                                            <input type="text" id="first_name" class="bg-gray-50 border placeholder-gray-500 border-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Name" required>
+                                        </div>
+                                        <div> 
+                                            <input type="tel" id="phone" class="bg-gray-50 border border-gray-400 placeholder-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                                        </div>
+                                        <div>
+                                            <input type="text" id="company" class="bg-gray-50 border border-gray-400 placeholder-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Company" required>
+                                        </div> 
+                                        <div>
+                                            <input type="email" id="email" class="bg-gray-50 border border-gray-400 placeholder-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Email" required>
+                                        </div> 
+                                        <div class="mb-6">
+                                            <textarea id="message" rows="4" class="block p-2 w-full text-sm placeholder-gray-500 bg-gray-50 rounded-lg border border-gray-400 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your message here..."></textarea>
+                                        </div>
+                            
                                     </div>
-                                    <div> 
-                                        <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-                                    </div>
-                                    <div>
-                                        <input type="text" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Company" required>
-                                    </div> 
-                                    <div>
-                                        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Email" required>
-                                    </div> 
-                                    <div class="mb-6">
-                                        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your message here..."></textarea>
-                                    </div>
-                        
-                                </div>
-                                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-            
-                            </form>
-                        </div>
-                        
-                        <div class="basis-[50%] px-5">
-                            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-                      
-                            <div class="flex flex-col items-center mb-4">
-                              <div class="mb-2 flex flex-col">
-                                <img src="phone-icon.png" alt="Phone Icon" class="w-6 h-6 inline-block mr-2">
-                                <p class="inline-block">123-456-7890</p>
-                              </div>
-                          
-                              <div class="mb-2 flex flex-col">
-                                <img src="address-icon.png" alt="Address Icon" class="w-6 h-6 inline-block mr-2">
-                                <p class="inline-block">1234 Address St, City, Country</p>
-                              </div>
-                          
-                              <div class="flex flex-col">
-                                <img src="email-icon.png" alt="Email Icon" class="w-6 h-6 inline-block mr-2">
-                                <p class="inline-block">info@example.com</p>
-                              </div>
+                                    <button type="submit" class="text-white bg-amber-600 hover:bg-amber-700 focus:ring-4 focus:outline-none font-medium rounded-lg text-md w-full py-2.5 text-center dark:bg-amber-600 dark:hover:bg-amber-700 dark:focus:ring-red-800">Submit</button>
+                
+                                </form>
                             </div>
-                        </div>
+                            
+                            <div class="basis-[40%] max-w-[1440px] md:py-[80] mx-auto md:flex-row flex-col justify-center">
+                                <h2 class="text-3xl font-bold mb-6 md:mb-4 ">Contact Us</h2>
+                          
+                                <div class="flex flex-col flex justify-center ">
+                                  <div class=" flex items-center">
+                                    <img src="./images/phone.png" alt="Phone Icon" class="w-12 h-12 inline-block m-4">
+                                    <p class="inline-block md:text-xl sm:text-xs">+92 342 2555645<br>+92 317 0088028<br>+92 347 2745462</p>
+                                  </div>
+                              
+                                  <div class="flex items-center">
+                                    <img src="./images/location.png" alt="Address Icon" class="w-12 h-12 inline-block m-4">
+                                    <p class="inline-block md:text-xl sm:text-xs">Karachi, Pakistan</p>
+                                  </div>
+                              
+                                  <div class="flex items-center">
+                                    <img src="./images/mail.png" alt="Email Icon" class="w-12 h-12 inline-block m-4">
+                                    <p class="inline-block md:text-xl sm:text-xs">creativesolutions274@gmail.com</p>
+                                  </div>
+                                </div>
 
+                                <div class=" mt-5 ">                              
+                                    <h2 class="text-2xl font-bold">Our Socials</h2>                                
+
+                                    <div class="flex">
+                                        <div class="flex items-center">
+                                            <a href="https://www.linkedin.com/company/creative-solutions274/" class="rtl:space-x-reverse">
+                                                <img src="./images/linkedin.png" alt="linkedin Icon" class="w-10 h-10 inline-block m-4">
+                                            </a>
+                                        </div>
+                                   
+                                        <div class="flex">
+                                            <a href="https://www.instagram.com/creative_solutionsagency?igsh=MTVlNmF2d2hqYnU0bg==" class="rtl:space-x-reverse">
+                                                <img src="./images/insta.png" alt="insta Icon" class="w-10 h-10 inline-block m-4">
+                                            </a>
+                                        </div>
+                                
+                                        <div class="flex">
+                                            <a href="https://www.facebook.com/profile.php?id=100088054343209&mibextid=JRoKGi" class="rtl:space-x-reverse">
+                                                <img src="./images/fb.png" alt="fb Icon" class="w-10 h-10 inline-block m-4">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
                       
                 </div>
-
+            </div>
             
 
                     <!-- ABOUT BUTTON-->
@@ -231,7 +256,7 @@
                         <div class="basis-[50%] pb-5">
                             <img class="w-[full]" src="./images/aboutus.jpg" alt="about-us">
                         </div>
-                        <div class="basis-[50%] px-5">
+                        <div class="basis-[50%] px-5 text-justify  ">
                             <h1 class="text-4xl pb-5">About Us</h1>
 
                             <p class=" py-3 text-gray-500 font-semibold dark:text-gray-400">At <strong class="font-medium text-gray-800 dark:text-white">Creative Solutions</strong>, we're a team of creators specializing in digital marketing, web development, 3D modeling, content writing, design, and illustration. Established in 2021, we've been crafting innovative solutions that bring ideas to life.</p>
@@ -248,7 +273,7 @@
                         </div>
 
                     </div>
-                    <div class="about_us max-w-[1440px] md:py-[80] py-5 flex mx-auto md:flex-row flex-col justify-center">
+                    <div class="about_us max-w-[1440px] md:py-[80] py-5 flex mx-auto md:flex-row flex-col justify-center text-justify">
 
                         <div class="basis-[35%] px-5 mb-5">
                             <h1 class="text-4xl pb-2">Our Mission</h1>

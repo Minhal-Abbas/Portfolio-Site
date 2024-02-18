@@ -98,16 +98,16 @@
                         <button class="inline-block p-4 border-b-2 rounded-t-lg hover:-translate-y-1 hover:transition duration-300" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Home</button>
                     </li>
                     <li class="me-2" role="presentation">
-                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 hover:-translate-y-1 hover:transition duration-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Portfolio & Testimonials</button>
-                    </li>
-                    <li class="me-2" role="presentation">
                         <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 hover:-translate-y-1 hover:transition duration-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Services</button>
                     </li>
-                    <li role="presentation">
-                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 hover:-translate-y-1 hover:transition duration-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contact Us</button>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 hover:-translate-y-1 hover:transition duration-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Portfolio</button>
                     </li>
                     <li role="presentation">
                         <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 hover:-translate-y-1 hover:transition duration-300" id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">About Us</button>
+                    </li>
+                    <li role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 hover:-translate-y-1 hover:transition duration-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contact Us</button>
                     </li>
                 </ul>
             </div>
@@ -128,9 +128,12 @@
                     <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Services tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div> -->
 
+
+                <!-- SERVICES BUTTON-->
                 <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
                     <div class="flex justify-center gap-10">
-                        <div class="w-60 p-0.5 bg-cyan-100 rounded-xl transform transition-all hover:-translate-y-1 hover:transition duration-300">
+
+                        <div class="w-60 p-0.5 bg-cyan-100 rounded-xl transform transition-all hover:-translate-y-1 hover:transition duration-300 flex-col md:flex-row">
                             <img class="h-40 object-cover rounded-xl" src="./images/dev.jpg" alt="dev">
                             <div class="p-2">
                                 <h2 class="font-bold text-lg text-gray-800">Web Developement</h2>
@@ -140,7 +143,8 @@
                                 <a href="#" role="button" class="text-white bg-yellow-700 px-3 py-1 rounded-xl">Learn More</a>
                             </div>
                         </div>
-                        <div class="w-60 p-0.5 bg-cyan-100 rounded-xl transform transition-all hover:-translate-y-1 hover:transition duration-300">
+
+                        <div class="w-60 p-0.5 bg-cyan-100 rounded-xl transform transition-all hover:-translate-y-1 hover:transition duration-300 flex-col md:flex-row">
                             <img class="h-40 w-full object-cover rounded-xl" src="./images/marketing.jpg" alt="marketing">
                             <div class="p-2">
                                 <h2 class="font-bold text-lg text-gray-800">Digital Marketing</h2>
@@ -150,7 +154,8 @@
                                 <a href="#" role="button" class="text-white bg-yellow-700 px-3 py-1 rounded-xl">Learn More</a>
                             </div>
                         </div>
-                        <div class="w-60 p-0.5 bg-cyan-100 rounded-xl transform transition-all hover:-translate-y-1 hover:transition duration-300">
+
+                        <div class="w-60 p-0.5 bg-cyan-100 rounded-xl transform transition-all hover:-translate-y-1 hover:transition duration-300 flex-col md:flex-row">
                             <img class="h-40 object-cover rounded-xl" src="./images/modeling.jpg" alt="modeling">
                             <div class="p-2">
                                 <h2 class="font-bold text-lg text-gray-800">3D Modeling</h2>
@@ -160,7 +165,46 @@
                                 <a href="#" role="button" class="text-white bg-yellow-700 px-3 py-1 rounded-xl">Learn More</a>
                             </div>
                         </div>
+
                     </div> 
+
+
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Your grid items go here -->
+                        <div class="bg-gray-200 p-4">
+                            <img class="h-40 object-cover rounded-xl" src="./images/modeling.jpg" alt="modeling">
+                            <div class="p-2">
+                                <h2 class="font-bold text-lg text-gray-800">3D Modeling</h2>
+                                <p class="text-sm text-gray-700">We do 3D Modeling autocad and 3dmax blah blah.</p>
+                            </div>
+                            <div class="m-2">
+                                <a href="#" role="button" class="text-white bg-yellow-700 px-3 py-1 rounded-xl">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="bg-gray-300 p-4">
+                            <img class="h-40 object-cover rounded-xl" src="./images/modeling.jpg" alt="modeling">
+                            <div class="p-2">
+                                <h2 class="font-bold text-lg text-gray-800">3D Modeling</h2>
+                                <p class="text-sm text-gray-700">We do 3D Modeling autocad and 3dmax blah blah.</p>
+                            </div>
+                            <div class="m-2">
+                                <a href="#" role="button" class="text-white bg-yellow-700 px-3 py-1 rounded-xl">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="bg-gray-400 p-4">
+                            <img class="h-40 object-cover rounded-xl" src="./images/modeling.jpg" alt="modeling">
+                            <div class="p-2">
+                                <h2 class="font-bold text-lg text-gray-800">3D Modeling</h2>
+                                <p class="text-sm text-gray-700">We do 3D Modeling autocad and 3dmax blah blah.</p>
+                            </div>
+                            <div class="m-2">
+                                <a href="#" role="button" class="text-white bg-yellow-700 px-3 py-1 rounded-xl">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+
             
                 </div>
 
@@ -175,20 +219,20 @@
                         <div class="flex max-w-[1440px] md:py-[80] py-3 flex mx-auto md:flex-row flex-col justify-center">
                             <div class="basis-[60%] flex justify-center">
                                 <form class="w-full max-w-[70%] rounded-lg ">
-                                    <h2 class="text-3xl font-bold mb-6">Send Us an Email</h2>
+                                    <h2 class="text-2xl md:text-4xl font-bold mb-6">Send Us an Email</h2>
                                     <div class="grid gap-4">
                                         <div>
-                                            <input type="text" id="first_name" class="bg-gray-50 border placeholder-gray-500 border-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Name" required>
+                                            <input type="text" id="first_name" class="bg-gray-50 border placeholder-gray-500 border-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Name*" required>
                                         </div>
                                         <div> 
-                                            <input type="tel" id="phone" class="bg-gray-50 border border-gray-400 placeholder-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                                            <input type="tel" id="phone" class="bg-gray-50 border border-gray-400 placeholder-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Phone Number*" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
                                         </div>
                                         <div>
-                                            <input type="text" id="company" class="bg-gray-50 border border-gray-400 placeholder-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Company" required>
-                                        </div> 
+                                            <input type="email" id="email" class="bg-gray-50 border border-gray-400 placeholder-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Email*" required>
+                                        </div>
                                         <div>
-                                            <input type="email" id="email" class="bg-gray-50 border border-gray-400 placeholder-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Email" required>
-                                        </div> 
+                                            <input type="text" id="company" class="bg-gray-50 border border-gray-400 placeholder-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Company">
+                                        </div>  
                                         <div class="mb-6">
                                             <textarea id="message" rows="4" class="block p-2 w-full text-sm placeholder-gray-500 bg-gray-50 rounded-lg border border-gray-400 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your message here..."></textarea>
                                         </div>
@@ -199,28 +243,31 @@
                                 </form>
                             </div>
                             
-                            <div class="basis-[40%] max-w-[1440px] md:py-[80] mx-auto md:flex-row flex-col justify-center">
-                                <h2 class="text-3xl font-bold mb-6 md:mb-4 ">Contact Us</h2>
+                            
+                            <div class="basis-[40%] max-w-[1440px] md:py-[80] md:mt-0 mt-8 mx-auto  md:flex-row flex-col justify-center">
+
+                                <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-5 text-center sm:text-left">Contact Us</h2>
                           
-                                <div class="flex flex-col flex justify-center ">
+                                <div class="flex flex-col justify-center">
                                   <div class=" flex items-center">
                                     <img src="./images/phone.png" alt="Phone Icon" class="w-12 h-12 inline-block m-4">
-                                    <p class="inline-block md:text-xl sm:text-xs">+92 342 2555645<br>+92 317 0088028<br>+92 347 2745462</p>
+                                    <p class="inline-block md:text-lg sm:text-xs">+92 342 2555645<br>+92 317 0088028<br>+92 347 2745462</p>
                                   </div>
-                              
+
                                   <div class="flex items-center">
                                     <img src="./images/location.png" alt="Address Icon" class="w-12 h-12 inline-block m-4">
-                                    <p class="inline-block md:text-xl sm:text-xs">Karachi, Pakistan</p>
+                                    <p class="inline-block md:text-lg sm:text-xs">Karachi, Pakistan</p>
                                   </div>
                               
                                   <div class="flex items-center">
                                     <img src="./images/mail.png" alt="Email Icon" class="w-12 h-12 inline-block m-4">
-                                    <p class="inline-block md:text-xl sm:text-xs">creativesolutions274@gmail.com</p>
+                                    <p class="inline-block md:text-lg sm:text-xs ">creativesolutions274@gmail.com</p>
+                                  
                                   </div>
                                 </div>
 
                                 <div class=" mt-5 ">                              
-                                    <h2 class="text-2xl font-bold">Our Socials</h2>                                
+                                    <h2 class="text-2xl font-bold text-center sm:text-left">Our Socials</h2>                                
 
                                     <div class="flex">
                                         <div class="flex items-center">
